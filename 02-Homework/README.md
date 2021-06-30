@@ -164,4 +164,5 @@ HTML:
 
 ## Links to GitHub and deployed website
 
-https://kdassign.github.io/HW1/
+Link to website: https://kdassign.github.io/HW1/
+Link to git hub repo: https://github.com/kdassign/HW1
