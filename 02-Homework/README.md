@@ -111,21 +111,21 @@ HTML:
 			</p>
 		</footer>
 
-<!--added semantic tag aside to class benefit-->
+		<!--added semantic tag aside to class benefit-->
 		<aside class="benefits"></aside>
 
-<!--changed last heading attribute from "h3" to "h4" so all headings are in sequential order-->
+		<!--changed last heading attribute from "h3" to "h4" so all headings are in sequential order-->
 		<footer>
 			<h4></h4>
 		</footer>    
 
-<!--changed div to img for class=hero-->
+		<!--changed div to img for class=hero-->
 		<img class="hero"></div>
 
-<!--added semantic tag section to class=content -->
+		<!--added semantic tag section to class=content -->
     	<section class="content">
 
-<!--changed ":website" title to "How to Sustain and Grow your Business Online"-->
+		<!--changed ":website" title to "How to Sustain and Grow your Business Online"-->
 		 <title>How to Sustain and Grow your Business Online</title>
 
 ## Installation
