@@ -162,4 +162,6 @@ HTML:
 
 ## Screenshot of deployed website via IPhone
 
-## Links to GitHub and deployed webiste
+## Links to GitHub and deployed website
+
+https://kdassign.github.io/HW1/
