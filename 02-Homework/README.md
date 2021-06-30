@@ -12,99 +12,100 @@ Below I will list the CSS and HTML changes from the project:
 
 CSS:
 
-/*changed tag to header so that it's more accesibility friendly for those who need it*/
-header {
-	padding: 20px;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	background-color: #2a607c;
-	color: #ffffff;
-}
+		/*changed tag to header so that it's more accesibility friendly for those who need it*/
+		header {
+			padding: 20px;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			background-color: #2a607c;
+			color: #ffffff;
+		}
 
-/*combined class specificity below so that this looks more cleaned up and less tedious to look at*/
+		/*combined class specificity below so that this looks more cleaned up and less tedious to look at*/
 
-#benefit-lead,
-#benefit-brand,
-#benefit-cost {
-	margin-bottom: 32px;
-	color: #ffffff;
-}
+		#benefit-lead,
+		#benefit-brand,
+		#benefit-cost {
+			margin-bottom: 32px;
+			color: #ffffff;
+		}
 
-#benefit-lead h3,
-#benefit-brand h3,
-#benefit-cost h3 {
-	margin-bottom: 10px;
-	text-align: center;
-}
+		#benefit-lead h3,
+		#benefit-brand h3,
+		#benefit-cost h3 {
+			margin-bottom: 10px;
+			text-align: center;
+		}
 
-#benefit-lead img,
-#benefit-brand img,
-#benefit-cost img {
-	display: block;
-	margin: 10px auto;
-	max-width: 150px;
-}
+		#benefit-lead img,
+		#benefit-brand img,
+		#benefit-cost img {
+			display: block;
+			margin: 10px auto;
+			max-width: 150px;
+		}
 
-#search-engine-optimization,
-#online-reputation-management,
-#social-media-marketing {
-	margin-bottom: 20px;
-	padding: 50px;
-	height: 300px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-color: #0072bb;
-	color: #ffffff;
-}
+		#search-engine-optimization,
+		#online-reputation-management,
+		#social-media-marketing {
+			margin-bottom: 20px;
+			padding: 50px;
+			height: 300px;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			background-color: #0072bb;
+			color: #ffffff;
+		}
 
-#search-engine-optimization img,
-#online-reputation-management img,
-#social-media-marketing img {
-	max-height: 200px;
-}
+		#search-engine-optimization img,
+		#online-reputation-management img,
+		#social-media-marketing img {
+			max-height: 200px;
+		}
 
-#search-engine-optimization h2,
- #online-reputation-management h2,
-  #social-media-marketing h2 {
-	margin-bottom: 20px;
-	font-size: 36px;
-}
+		#search-engine-optimization h2,
+		#online-reputation-management h2,
+		#social-media-marketing h2 {
+			margin-bottom: 20px;
+			font-size: 36px;
+		}
 
-/*changed tag to footer so that it's more accesibility friendly for those who need it*/
+		/*changed tag to footer so that it's more accesibility friendly for those who need it*/
 
-footer {
-	padding: 30px;
-	clear: both;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	text-align: center;
-}
+		footer {
+			padding: 30px;
+			clear: both;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			text-align: center;
+		}
 
-/*changed h3 to h4 so that all the header attributes are sequential as asked for in the README.md*/
+		/*changed h3 to h4 so that all the header attributes are sequential as asked for in the README.md*/
 
-footer h4 {
-	font-size: 20px;
-}
+		footer h4 {
+			font-size: 20px;
+		}
 
 HTML:
 - changed non-semantic tags to semantic for header and footer
-<body>
-    <header></header>
-    <footer></footer>
+		<body>
+			<header></header>
+			<footer></footer>
+		</body>
 
 - added semantic tag aside to class benefit
-    <aside class="benefits">
+		<aside class="benefits"></aside>
 
 - changed last heading attribute from "h3" to "h4" so all headings are in sequential order
-   <footer>
-        <h4>Made with ❤️️ by Horiseon</h4>
-   </footer>    
+		<footer>
+			<h4>Made with ❤️️ by Horiseon</h4>
+		</footer>    
 
 - changed div to img for class=hero
-    <img class="hero"></div>
+		<img class="hero"></div>
 
 - added semantic tag section to class=content 
-    <section class="content">
+    	<section class="content">
 
 - changed ":website" title to "How to Sustain and Grow your Business Online"
-    <title>How to Sustain and Grow your Business Online</title>
+		 <title>How to Sustain and Grow your Business Online</title>
 
 ## Installation
 
