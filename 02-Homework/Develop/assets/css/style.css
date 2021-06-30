@@ -1,3 +1,5 @@
+/*Below is the refactorization of code (HW1) that was not accessibility friendly*/
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -8,6 +10,7 @@ body {
 	background-color: #d9dcd6;
 }
 
+/*changed tag to header so that it's more accesibility friendly for those who need it*/
 header {
 	padding: 20px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -86,6 +89,8 @@ p {
 	background-color: #2589bd;
 }
 
+/*combined class specificity below so that this looks more cleaned up and less tedious to look at */
+
 #benefit-lead,
 #benefit-brand,
 #benefit-cost {
@@ -132,12 +137,16 @@ p {
 	font-size: 36px;
 }
 
+/*changed tag to footer so that it's more accesibility friendly for those who need it*/
+
 footer {
 	padding: 30px;
 	clear: both;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	text-align: center;
 }
+
+/*changed h3 to h4 so that all the header attributes are sequential as asked for in the README.md*/
 
 footer h4 {
 	font-size: 20px;
