@@ -84,7 +84,7 @@ CSS:
 		}
 
 HTML:
-<!--changed non-semantic tags to semantic for header and footer-->
+		<!--changed non-semantic tags to semantic for header and footer-->
 
 		<body>
 			<header>
