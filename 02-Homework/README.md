@@ -1,120 +1,143 @@
-# 01 HTML, CSS, and Git: Code Refactor
+# 01 HTML, CSS, and Git: Code Refactor for Coding Bootcamp
 
-## Your Task
+## Introduction
 
-Be sure to review the [Homework Guide](./Homework-Guide/README.md) before you start working on this assignment! This week is an odd-numbered week, so your homework is an on-the-job ticket&mdash;meaning that you'll begin with starter code that you need to modify. 
+This project required the refactoring of existing code to make it accessibility-friendly.
 
-**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers. For this particular homework assignment, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+"**Refactoring** existing code (improving it without changing what it does) to meet a certain set of standards or to implement a new technology is a common task for front-end and junior developers."
 
-> **Important**: When working with someone else's code, you should adhere to the **Scout Rule**&mdash;always leave the code a little cleaner than when you found it.
+Below I will list the CSS and HTML changes from the project:
 
-An increasingly important consideration for businesses, web **accessibility** ensures that people with disabilities can access a website using assistive technologies like video captions, screen readers, and braille keyboards. Accessibility is good for business&mdash;for one thing, accessible sites rank higher in search engines like Google. It also helps companies avoid litigation, which might arise if people with disabilities can't access a website.
+## Code Samples for both CSS and HTML
 
-Accessibility can include complex requirements, but your tech lead has given you a small list of specific criteria for this project. These criteria are documented in the Acceptance Criteria section.
+CSS:
 
-To impress clients, you should always exceed expectations and improve the codebase for long-term sustainability. For example, check that all links are functioning correctly. You can also increase the efficiency of the CSS by consolidating the selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
+/*changed tag to header so that it's more accesibility friendly for those who need it*/
+header {
+	padding: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: #2a607c;
+	color: #ffffff;
+}
 
-Are you ready to begin? Here are this week's homework requirements.
+/*combined class specificity below so that this looks more cleaned up and less tedious to look at*/
 
-## User Story
+#benefit-lead,
+#benefit-brand,
+#benefit-cost {
+	margin-bottom: 32px;
+	color: #ffffff;
+}
 
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
-```
+#benefit-lead h3,
+#benefit-brand h3,
+#benefit-cost h3 {
+	margin-bottom: 10px;
+	text-align: center;
+}
 
-## Acceptance Criteria
+#benefit-lead img,
+#benefit-brand img,
+#benefit-cost img {
+	display: block;
+	margin: 10px auto;
+	max-width: 150px;
+}
 
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
+#search-engine-optimization,
+#online-reputation-management,
+#social-media-marketing {
+	margin-bottom: 20px;
+	padding: 50px;
+	height: 300px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #0072bb;
+	color: #ffffff;
+}
 
-## Mock-Up
+#search-engine-optimization img,
+#online-reputation-management img,
+#social-media-marketing img {
+	max-height: 200px;
+}
 
-The following image shows the web application's appearance and functionality:
+#search-engine-optimization h2,
+ #online-reputation-management h2,
+  #social-media-marketing h2 {
+	margin-bottom: 20px;
+	font-size: 36px;
+}
 
-![The Horiseon webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.](./Assets/01-html-css-git-homework-demo.png)
+/*changed tag to footer so that it's more accesibility friendly for those who need it*/
 
-> **Note**: This layout is designed for desktop viewing, so you may notice that some of the elements don't look like the mock-up at a resolution smaller than 768px. Eventually you'll learn how to make elements responsive so that your web application is optimized for any screen size.
+footer {
+	padding: 30px;
+	clear: both;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+}
 
-## Getting Started
+/*changed h3 to h4 so that all the header attributes are sequential as asked for in the README.md*/
 
-Follow these instructions to create your project and deploy it to GitHub Pages:
+footer h4 {
+	font-size: 20px;
+}
 
-1. Create a new repository on your GitHub account and clone it to your computer.
+HTML:
+- changed non-semantic tags to semantic for header and footer
+<body>
+    <header></header>
+    <footer></footer>
 
-2. When you're ready to deploy, use the `git add`, `git commit`, and `git push` commands to save and push your code to your GitHub repository.
+- added semantic tag aside to class benefit
+    <aside class="benefits">
 
-3. Navigate to your GitHub repository in the browser and then select the Settings tab on the right side of the page.
+- changed last heading attribute from "h3" to "h4" so all headings are in sequential order
+   <footer>
+        <h4>Made with ❤️️ by Horiseon</h4>
+   </footer>    
 
-4. On the Settings page, scroll down to the GitHub Pages section. Then, in the section labeled Source, select the `main` branch as your source.
+- changed div to img for class=hero
+    <img class="hero"></div>
 
-5. Navigate to <your-github-username.github.io/your-repository-name> and you will find that your new webpage has gone live! For example, if your GitHub username is "lernantino" and the project is "css-demo-site", then your URL would be <lernantino.github.io/css-demo-site>.
+- added semantic tag section to class=content 
+    <section class="content">
 
-You can also refer to this [YouTube video on enabling GitHub Pages](https://youtu.be/P4Mu1t5rIXg) for more guidance.
+- changed ":website" title to "How to Sustain and Grow your Business Online"
+    <title>How to Sustain and Grow your Business Online</title>
 
-> **Important**: It might take a few minutes for GitHub pages to display your site correctly. If your project does not deploy or display correctly, check that all file paths in your application are relative and use the right casing. GitHub is case-sensitive, an inccorect capital or lowercase letter could cause problems in deployment.
+## Installation
 
-Be sure to add, commit, and push your work to see the most up-to-date version of your app!
+- changed non-semantic tags to semantic for header and footer
 
-## Grading Requirements
+- added semantic tag aside to class benefit
 
-This homework is graded based on the following criteria: 
+- changed last heading attribute from "h3" to "h4" so all headings are in sequential order
 
-### Technical Acceptance Criteria: 40%
+- changed class specificity to id to make #search-engine-optimization work properly and id for the other class values listed below
+ 
+- combined below values
 
-* Satisfies all of the preceding acceptance criteria plus the following code improvements:
+ "#benefit-lead h3,
 
-  * Application's links all function correctly.
+ #benefit-brand h3,
 
-  * Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+ #benefit-cost h3"
 
-  * Application's CSS file is properly commented.
+  "#search-engine-optimization,
+   
+ #online-reputation-management,
+  
+ #social-media-marketing"
+ 
+ as groups into one css selector for multiple selectors.
 
-### Deployment: 32%
+- changed div to img for class=hero
 
-* Application deployed at live URL.
+- added semantic tag section to class=content 
 
-* Application loads with no errors.
+- changed ":website" title to "How to Sustain and Grow your Business Online"
 
-* Application GitHub URL submitted.
+## Screenshot of deployed website via IPhone
 
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application resembles mock-up provided in the homework instructions (at least 90%).
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Links to GitHub and deployed webiste
