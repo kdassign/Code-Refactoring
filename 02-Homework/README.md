@@ -84,27 +84,48 @@ CSS:
 		}
 
 HTML:
-- changed non-semantic tags to semantic for header and footer
+<!--changed non-semantic tags to semantic for header and footer-->
+
 		<body>
-			<header></header>
-			<footer></footer>
-		</body>
+			<header>
+				<h1>Hori<span class="seo">seo</span>n</h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="#search-engine-optimization">Search Engine Optimization</a>
+						</li>
+						<li>
+							<a href="#online-reputation-management">Online Reputation Management</a>
+						</li>
+						<li>
+							<a href="#social-media-marketing">Social Media Marketing</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 
-- added semantic tag aside to class benefit
-		<aside class="benefits"></aside>
-
-- changed last heading attribute from "h3" to "h4" so all headings are in sequential order
 		<footer>
 			<h4>Made with ❤️️ by Horiseon</h4>
+			<p>
+				&copy; 2019 Horiseon Social Solution Services, Inc.
+			</p>
+		</footer>
+
+<!--added semantic tag aside to class benefit-->
+		<aside class="benefits"></aside>
+
+<!--changed last heading attribute from "h3" to "h4" so all headings are in sequential order-->
+		<footer>
+			<h4></h4>
 		</footer>    
 
-- changed div to img for class=hero
+<!--changed div to img for class=hero-->
 		<img class="hero"></div>
 
-- added semantic tag section to class=content 
+<!--added semantic tag section to class=content -->
     	<section class="content">
 
-- changed ":website" title to "How to Sustain and Grow your Business Online"
+<!--changed ":website" title to "How to Sustain and Grow your Business Online"-->
 		 <title>How to Sustain and Grow your Business Online</title>
 
 ## Installation
